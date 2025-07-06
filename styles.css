@@ -8,3 +8,33 @@ body {
     background-color: #f8f9fa;
     border-radius: 8px;
 }
+
+.form-check-inline {
+    margin-right: 15px;
+}
+
+.form-check-input {
+    cursor: pointer;
+}
+
+.form-check-label {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.present {
+    color: green;
+}
+
+.absent {
+    color: red;
+}
+
+
+/* Override Bootstrap rounded radios */
+.form-check-input[type="radio"].square-radio {
+    border-radius: 5px;
+    /* Make it square */
+    width: 1.2em;
+    height: 1.2em;
+}
