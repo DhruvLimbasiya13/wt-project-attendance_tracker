@@ -174,20 +174,32 @@
 
 
         function resetAttendance() {
-            for (let i = startRoll; i <= endRoll; i++) {
+            let i = 1;
+            while (true) {
+                let row = document.getElementById("row" + i);
+                if (!row) {
+                    i++;
+                    if (i > endRoll) break;
+                    continue;
+                }
+
                 let radios = document.getElementsByName("student" + i);
                 for (let j = 0; j < radios.length; j++) {
                     radios[j].checked = (radios[j].value === "Absent");
                 }
 
-                // Reset status cell
                 let statusCell = document.getElementById("status" + i);
-                statusCell.innerText = "Absent";
-                statusCell.className = "text-danger";
+                if (statusCell) {
+                    statusCell.innerText = "Absent";
+                    statusCell.className = "text-danger";
+                }
+
+                i++;
             }
 
             document.getElementById("summary").innerHTML = "";
         }
+
 
         function addStudent() {
             let tbody = document.getElementById("attendanceBody");
