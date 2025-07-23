@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search for a Ride</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Car Pooling</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search Ride</a></li>
+                <li><a href="offer.html">Offer Ride</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Find a Ride</h2>
+            <form>
+                <div class="form-group">
+                    <label for="source">Source</label>
+                    <input type="text" id="source" name="source" required>
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destination</label>
+                    <input type="text" id="destination" name="destination" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <button type="submit">Search</button>
+            </form>
+            <div id="ride-listings" style="margin-top: 30px;">
+                <h3>Available Rides</h3>
+                <p>Ride search results will appear here.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Car Pooling App</p>
+    </footer>
+</body>
+</html>
