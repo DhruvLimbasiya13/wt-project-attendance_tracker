@@ -1,35 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Pooling - Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for a modern look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Use the Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>Car Pooling</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="search.html">Search Ride</a></li>
-                <li><a href="offer.html">Offer Ride</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header and Navigation Bar -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- App Title -->
+            <h1 class="text-2xl font-bold text-gray-900">GoTogether</h1>
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="flex space-x-6 items-center">
+                    <li><a href="index.html"
+                            class="text-blue-600 font-semibold border-b-2 border-blue-600 pb-1">Home</a></li>
+                    <li><a href="search.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Search
+                            Ride</a></li>
+                    <li><a href="offer.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Offer
+                            Ride</a></li>
+                    <li><a href="profile.html"
+                            class="text-gray-600 hover:text-blue-600 transition duration-300">Profile</a></li>
+                    <li><a href="contact.html"
+                            class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300">Contact
+                            Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <div class="container">
-            <h2>Welcome to the Car Pooling App!</h2>
-            <p>Your one-stop solution for sharing rides and saving money. Find a ride or offer one to fellow travelers.</p>
-            <img src="istockphoto-1199861321-2048x2048.jpg" alt="Car pooling illustration" style="width:100%; margin-top: 20px;">
+    <!-- Main Content Area -->
+    <main class="py-12">
+        <div class="container mx-auto px-6 text-center">
+            <!-- Hero Section -->
+            <div class="bg-white rounded-lg shadow-xl p-8 md:p-12 lg:p-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Welcome to GoTogether!</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">Your one-stop solution for sharing rides and
+                    saving money. Find a ride or offer one to fellow travelers.</p>
+
+                <!-- Call to Action Buttons -->
+                <div class="flex justify-center space-x-4 mb-10">
+                    <a href="search.html"
+                        class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-blue-700 transition duration-300 shadow-lg">Find
+                        a Ride</a>
+                    <a href="offer.html"
+                        class="bg-gray-200 text-gray-800 px-8 py-3 rounded-full font-semibold text-lg hover:bg-gray-300 transition duration-300 shadow-lg">Offer
+                        a Ride</a>
+                </div>
+
+                <!-- Illustration Image -->
+                <img src="istockphoto-1199861321-2048x2048.jpg"
+                    alt="Car pooling illustration" class="w-full max-w-4xl mx-auto rounded-lg shadow-md"
+                    onerror="this.onerror=null;this.src='https://placehold.co/1200x600/CCCCCC/FFFFFF?text=Image+Not+Found';">
+            </div>
         </div>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Car Pooling App</p>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 GoTogether Car Pooling App</p>
+        </div>
     </footer>
+
 </body>
+
 </html>
